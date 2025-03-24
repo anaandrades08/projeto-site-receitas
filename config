@@ -1,0 +1,101 @@
+cd projeto-site-receitas/client
+npx create-next-app@latest .
+
+Escolha as opções:
+
+TypeScript: Yes.
+ESLint: Yes.
+Tailwind CSS: Yes (opcional, mas recomendado).
+src/ directory: Yes.
+App Router: Yes.
+
+npm install axios @prisma/client
+
+
+###############################################################
+cd server
+npm init -y
+
+npm install express prisma @prisma/client bcryptjs jsonwebtoken cors
+
+npx prisma init
+
+npx prisma generate
+
+npx prisma migrate dev --name init
+
+npm install bcryptjs
+
+npm install express cors body-parser @prisma/client bcryptjs jsonwebtoken
+
+Passo 4: Testando a Integração
+Inicie o backend:
+
+bash
+Copy
+cd ../server
+node app.js
+Inicie o frontend:
+
+bash
+Copy
+cd ../client
+npm run dev
+
+
+
+
+###copiar para o git
+
+cd projeto-site-receitas
+
+git status
+
+git init
+
+git add .
+
+git commit -m "Primeiro commit: adiciona projeto site de receitas"
+
+git remote add origin https://github.com/anaandrades08/projeto-site-receitas.git
+
+git branch -M main
+
+git push -u origin main
+
+ou use:
+
+git push --force origin main
+
+
+
+##
+1. Puxe as mudanças do repositório remoto
+Rode o comando abaixo para trazer as alterações do remoto para o seu repositório local:
+
+bash
+git pull origin main
+Isso sincronizará o branch local com o remoto. Caso existam conflitos, o Git pedirá para resolvê-los manualmente.
+
+2. Adicione as mudanças locais novamente
+Após o git pull, verifique se há arquivos que precisam ser adicionados ao commit:
+
+bash
+git add .
+Se necessário, faça um novo commit:
+
+bash
+git commit -m "Resolve conflitos e adiciona mudanças locais"
+3. Envie as alterações para o repositório remoto
+Agora, o branch local está atualizado e sincronizado com o remoto. Envie os arquivos com:
+
+bash
+git push -u origin main
+Nota Importante:
+Se você sabe que não precisa dos commits existentes no repositório remoto e quer sobrescrevê-lo completamente com os arquivos locais, pode usar o comando --force. Porém, isso deve ser feito com cuidado, pois sobrescreve tudo no repositório remoto:
+
+bash
+git push --force origin main
+Essa abordagem é útil se o repositório remoto foi criado recentemente e você deseja substituí-lo pelos arquivos locais.
+
+Me avise se precisar de ajuda com conflitos ou qualquer outro detalhe! 🚀✨

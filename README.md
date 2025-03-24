@@ -25,8 +25,11 @@ Express: Framework para criar APIs.
 Prisma: ORM para interagir com o banco de dados.
 
 bcryptjs: Para criptografar senhas.
+npm install bcryptjs
 
 jsonwebtoken: Para autenticação via JWT.
+
+npm install express cors body-parser @prisma/client bcryptjs jsonwebtoken
 
 PostgreSQL: Banco de dados relacional.
 

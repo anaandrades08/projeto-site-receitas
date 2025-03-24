@@ -1,5 +1,5 @@
+##o que não enviar ao GIT
+
 node_modules
-# Keep environment variables out of version control
 .env
-#arquivo de passos de configuracao
-config.txt
+config
