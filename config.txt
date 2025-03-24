@@ -49,6 +49,8 @@ npm run dev
 
 cd projeto-site-receitas
 
+git status
+
 git init
 
 git add .
