@@ -59,7 +59,7 @@ git commit -m "Primeiro commit: adiciona projeto site de receitas"
 
 git remote add origin https://github.com/anaandrades08
 
-git remote add origin https://github.com/anaandrades08/projeto-site-receitas
+git remote add origin https://github.com/anaandrades08/projeto-site-receitas.git
 
 git branch -M main
 
