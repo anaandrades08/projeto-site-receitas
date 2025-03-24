@@ -1,0 +1,54 @@
+cd projeto-site-receitas/client
+npx create-next-app@latest .
+
+Escolha as opções:
+
+TypeScript: Yes.
+ESLint: Yes.
+Tailwind CSS: Yes (opcional, mas recomendado).
+src/ directory: Yes.
+App Router: Yes.
+
+npm install axios @prisma/client
+
+
+###############################################################
+cd server
+npm init -y
+
+npm install express prisma @prisma/client bcryptjs jsonwebtoken cors
+
+npx prisma init
+
+npx prisma generate
+
+npx prisma migrate dev --name init
+
+npm install bcryptjs
+
+npm install express cors body-parser @prisma/client bcryptjs jsonwebtoken
+
+Passo 4: Testando a Integração
+Inicie o backend:
+
+bash
+Copy
+cd ../server
+node app.js
+Inicie o frontend:
+
+bash
+Copy
+cd ../client
+npm run dev
+
+
+
+
+###copiar para o git
+
+cd projeto-site-receitas
+
+git init
+
+git add .
